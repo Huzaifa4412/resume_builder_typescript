@@ -25,18 +25,18 @@
                     </h2>
                     <div class="name flex flex-col ">
                         <label for="nameField" class="personalDetails">Your Name 👇 </label>
-                        <input type="text" id="nameField" placeholder="Enter Your Name...">
+                        <input type="text" required id="nameField" placeholder="Enter Your Name...">
                     </div>
                     <div class="profession flex flex-col ">
                         <label for="professionField" class="personalDetails">Your Profession 👇 </label>
-                        <input type="text" id="professionField" placeholder="Enter Your Profession...">
+                        <input type="text" required id="professionField" placeholder="Enter Your Profession...">
                     </div>
                     <div class="email flex flex-col ">
                         <label for="emailField" class="personalDetails">Your Email 👇 </label>
-                        <input type="email" id="emailField" placeholder="Enter Your Email...">
+                        <input type="email" required id="emailField" placeholder="Enter Your Email...">
                     </div>
                     <div class="contact mt-5 flex flex-col ">
-                        <label for="contactField" class="personalDetails">Contact number 👇 </label>
+                        <label for="contactField" required class="personalDetails">Contact number 👇 </label>
                         <input type="number" id="contactField" placeholder=" Enter Your Contact no...">
                     </div>
                     <div class="address mt-5 flex flex-col ">
@@ -46,7 +46,8 @@
                     </div>
                     <div class="profileContainer mt-5 flex flex-col gap-3">
                         <label for="profilePic" class="personalDetails">Profile Picture 👇 </label>
-                        <input type="file" id="profilePic" accept="image/jpeg, image/png , image/jpg , image/*">
+                        <input type="file" id="profilePic" required
+                            accept="image/jpeg, image/png , image/jpg , image/*">
                     </div>
                     <div class="impLinks mt-5 ">
                         <h2 class="text-red-500 text-xl font-semibold">Important Links 🔗</h2>
@@ -62,7 +63,7 @@
                         </div>
                         <div class="mt-5 linkedin items-center">
                             <label for="linkedinField" class="personalDetails links">LinkedIn 👉 </label>
-                            <input type="search" id="linkedinField" placeholder="Your LinkedIn Link">
+                            <input type="search" required id="linkedinField" placeholder="Your LinkedIn Link">
                             </label>
                         </div>
                     </div>
@@ -73,14 +74,14 @@
                     <div class="objective  textarea-obj flex flex-col ">
                         <label for="objectiveField" class="ProfessionalDetails">Objective 👇
                         </label>
-                        <textarea name="objective" id="objectiveField" rows="4"
+                        <textarea required name="objective" id="objectiveField" rows="4"
                             placeholder="Enter Your Objective..."></textarea>
                     </div>
                     <div class="work-experience mt-10 textarea-obj flex flex-col ">
                         <label for="workExperienceFeild">Work Experience 👇
                         </label>
-                        <textarea name="work-experience" class="workExperienceFields" rows="4" id="workExperienceFeild"
-                            placeholder="Enter Your Experience..."></textarea>
+                        <textarea name="work-experience" class="workExperienceFields" required rows="4"
+                            id="workExperienceFeild" placeholder="Enter Your Experience..."></textarea>
                         <button id="work-experience-addBtn" class=" text-blue-400 hover:text-white hover:bg-slate-500 max-w-fit px-3 py-1 mt-2 border-2
                         hover:border-slate-500 m-auto outline-none">Add
                             More</button>
@@ -88,7 +89,7 @@
                     <div class="academic-qualificationField textarea-obj mt-10 flex flex-col ">
                         <label for="academic" class="ProfessionalDetails">Academic Qualifications 👇
                         </label>
-                        <textarea name="academic" id="qualificationField" class="academicField" rows="4"
+                        <textarea name="academic" required id="qualificationField" class="academicField" rows="4"
                             placeholder="Enter Your Academic Qualifications..."></textarea>
                         <button id="academic-qualification-addBtn"
                             class="text-blue-400 hover:text-white hover:bg-slate-500 max-w-fit px-3 py-1 mt-2 border-2 hover:border-slate-500 m-auto outline-none">Add
@@ -115,7 +116,7 @@
                     <img src="./images/sample-profile.jpg" class="w-full h-full object-cover" id="profilePicT" alt="">
                 </div>
 
-                <div class="name font-semibold text-3xl mt-5" id="nameT1">Huzaifa Mukhtar</div>
+                <div class="name font-semibold text-3xl text-center mt-5" id="nameT1">Huzaifa Mukhtar</div>
                 <div class="designation text-slate-100 -mt-5 professionT">Frontend Developer</div>
                 <div class="contact flex flex-col items-center mt-5">
                     <i class="ri-contacts-line font-bold"></i>

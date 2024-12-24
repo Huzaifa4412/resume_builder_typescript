@@ -26,6 +26,7 @@ generateResumeButton?.addEventListener("click", (e: Event) => {
     e.preventDefault();
     document.querySelector("#nameT1")!.textContent = (document.querySelector("#nameField") as HTMLInputElement)?.value || '';
     document.querySelector("#emailT")!.textContent = (document.querySelector("#emailField") as HTMLInputElement)?.value || '';
+    document.querySelector("#nameT2")!.textContent = (document.querySelector("#nameField") as HTMLInputElement)?.value || '';
     (document.querySelector("#emailT") as HTMLAnchorElement)!.href = `mailto:${(document.querySelector("#emailField") as HTMLInputElement)?.value || ''}`;
     document.querySelector(".phone")!.innerHTML = (document.querySelector("#contactField") as HTMLInputElement)?.value || '';
     (document.querySelector(".phone") as HTMLAnchorElement)!.href = `tel:${(document.querySelector("#contactField") as HTMLInputElement)?.value || ''}`;
